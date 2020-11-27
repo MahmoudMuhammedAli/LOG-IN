@@ -1,0 +1,132 @@
+body{
+    height: 60vh;
+    display: flex;
+    background: url(wallpaper/wavy.jpg) no-repeat center center fixed;
+    -webkit-background-size:cover ;
+    -moz-background-size:cover ;
+    -o-background-size:cover ;
+    background-size: cover;
+    align-items: center;
+    font-size: xx-large;
+    font-family: "Varela Round";
+}
+.container{
+    margin: 20px auto;
+    width: 1200px;
+}
+.container .color-switcher{
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container .color-switcher li{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+h1{
+    
+    margin-top: 300px;
+    margin-left: 270px;
+    color:rgb(228, 242, 253);
+    font-size: 100px;
+    text-align: center;
+    background-color: #2b1616bd;
+    width: 400px; height: 400px;
+    -moz-border-radius:1000px;
+    -webkit-border-radius: 3000px;
+    z-index: 2;
+    
+   /* 
+    text-shadow: 2px 2px 3px rgb(75, 73, 56);
+*/
+}
+.form{
+    padding-top: 130px;
+    color: aliceblue;
+    display: inline-block;
+    width:30%; height: 98vh;
+    padding-bottom: 5px;
+    position: fixed; top:0; right: 0;
+    background-color: #2b1616de;
+    font-size: 25px;
+    height:100% ;
+    margin-top: auto; margin-left: auto; margin-right: 0;
+    text-align: center;
+    padding-left: 10px;
+    z-index: 1;
+}
+.pp{
+    width:80%;
+    height: 50px;
+    background-color: #35afd496;
+    font-size: large;
+    font-weight: bold;
+    padding-left: 5px;
+    border: none;
+}
+
+.new{
+        
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size:18px ;
+}
+.bn{
+    display: inline-block;
+
+    color: #000000;
+    background-color: #35afd496;
+    border:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 7px;
+    text-align: center;
+    padding-left: 16px;
+    padding-right:16px ; 
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 4px;
+    margin-right: 4px;
+    height: 36px;
+    min-width: 54px;
+}
+.bn:hover{
+    color: rgb(2, 2, 2);
+    background-color: #a13939;
+    border: 2px solid #35afd496;
+}
+.pp:hover{
+    background-color: #a13939;
+}
+
+@media(max-width:800px){
+    body{
+        display: inline-flex;
+    }
+    h1{
+        margin-top: -50px;
+        margin-left: 120px;
+        font-size: 50px;
+        height: 200px;
+        width: 200px;
+        background: url(wallpaper/121433.jpg) no-repeat center center fixed;
+        color: #e7ff10;
+        text-shadow: 4px 4px 2px rgb(75, 73, 56);
+        
+    }
+    .form{
+        padding-top: 340px;
+        background-color: #00000057;
+        width: 100%;
+    }
+    .new{
+        
+        font-size: 18px;
+    }
+    #pic{
+        width: 45px;
+    }
+}

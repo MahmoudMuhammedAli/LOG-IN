@@ -1,6 +1,11 @@
 const h1 = document.querySelector('h1');
 const f = document.querySelector('.form');
 const pics = document.querySelectorAll('.pics');
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
+
+
 h1.addEventListener('click', () => {
     if (f.style.opacity === "0") {
         h1.style.marginLeft = "21%";
@@ -26,11 +31,39 @@ pics.forEach(pic => {
         font-family: 'Quattrocento Sans', sans-serif;`;
     })
 });
+openModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = document.querySelector(button.dataset.modalTarget)
+      openModal(modal)
+    })
+  })
+  
+  overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active')
+    modals.forEach(modal => {
+      closeModal(modal)
+    })
+  })
+  
+  closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal')
+      closeModal(modal)
+    })
+  })
+  
+  function openModal(modal) {
+    if (modal == null) return
+    modal.classList.add('active')
+    overlay.classList.add('active')
+  }
+  
+  function closeModal(modal) {
+    if (modal == null) return
+    modal.classList.remove('active')
+    overlay.classList.remove('active')
+  }
 
 
-
-
-
-
-/*     
+/*
  */

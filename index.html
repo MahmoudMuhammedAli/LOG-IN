@@ -37,14 +37,15 @@
             <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"
                 target="_blank"> <img id="pic" width="150" src="wallpaper/168-512.png" alt="Here"> </a>
         </span>
-        <button class="bn" id="theme">Change theme</button>
+        <button data-modal-target="#modal" class="bn" id="theme">Change theme</button>
     </div>
-    <div class="thm">
-        <div class="model-head">
+    <div class="modal" id="modal">
+        <div class="modal-head">
             <h2>Pick a theme</h2>
-            <button class="close-button">&times;</button>
+            <button data-close-button class="close-button">&times;</button>
+            
         </div>
-        <div>
+        <div class="model-body">
             <ul>
                 <li><img class="pics" src="wallpaper/121433.jpg"></li>
                 <li><img class="pics" src="wallpaper/wavy.jpg"></li>
@@ -52,6 +53,7 @@
             </ul>
         </div>
     </div>
+    <div id="overlay"></div>
     <script src="app.js"></script>
 </body>
 

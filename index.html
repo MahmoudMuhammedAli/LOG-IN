@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"> 
-        <meta name="discription" content="Google search replica">
-        <meta name="author" content="Mahmoud">
-        <title>Log In</title>
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <link rel="icon" type="image/png" href="wallpaper/lgin.png"/>
-        <link rel ="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
-    </head>
-    
-    <body>
- 
-        <h1> <br>LOG IN!</h1>
-        <div class="form">
-            <form action="https://www.facebook.com/" target="_blank" method="GET">
-               
-                <input class="pp" type="text"  placeholder="E-mail" name="name"required autocomplete="off">
-              
-                <br><br>
-                <input class="pp"type="password" placeholder="Password" name="pass" required autocomplete="off">
-              
-                <br>
-                <input class="bn"type="submit" value="Log in">
-            </form>
-            
-            <span class="new" >
-                
-                New Here? Go ahead and Sign Up!<br> <br>
-                <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp" target="_blank"> <img id="pic"width="150" src="wallpaper/168-512.png" alt="Here"> </a>
-            </span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="discription" content="Google search replica">
+    <meta name="author" content="Mahmoud">
+    <title>Log In</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="icon" type="image/png" href="wallpaper/lgin.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
+</head>
+
+<body>
+
+    <h1> <br>LOG IN!</h1>
+    <div class="form">
+        <form action="https://www.facebook.com/" target="_blank" method="GET">
+
+            <input class="pp" type="text" placeholder="E-mail" name="name" required autocomplete="off">
+
+            <br><br>
+            <input class="pp" type="password" placeholder="Password" name="pass" required autocomplete="off">
+
+            <br>
+            <input class="bn" type="submit" value="Log in">
+        </form>
+
+        <span class="new">
+
+            New Here? Go ahead and Sign Up!<br> <br>
+            <a href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp"
+                target="_blank"> <img id="pic" width="150" src="wallpaper/168-512.png" alt="Here"> </a>
+        </span>
+        <button class="bn" id="theme">Change theme</button>
+    </div>
+    <div class="thm">
+        <div class="model-head">
+            <h2>Pick a theme</h2>
+            <button class="close-button">&times;</button>
         </div>
-        <script src = "app.js"></script>
-    </body>
+        <div>
+            <ul>
+                <li><img class="pics" src="wallpaper/121433.jpg"></li>
+                <li><img class="pics" src="wallpaper/wavy.jpg"></li>
+                <li><img class="pics" src="wallpaper/121407.jpg"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
 </html>
